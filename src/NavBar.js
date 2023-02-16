@@ -5,7 +5,7 @@ function NavBar() {
     return (
         <div className='navBar'>
             <div className='navBarLinks'>
-                <Link to='/todoList'>TodoList</Link>
+                <Link to='/'>TodoList</Link>
                 <Link to='/about'>About</Link>
             </div>
       </div>

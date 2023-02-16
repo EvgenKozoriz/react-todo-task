@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 
 function TodoItem({text, completed, deleteFn, id, editTextFn, setCompleteTodo}) {
     const [isVisible, setIsVisible] = useState(false)

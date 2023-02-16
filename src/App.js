@@ -1,8 +1,8 @@
 import React from 'react'
-import  ReactDOM  from 'react';
 import TodoList from './todoList';
 import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 import About from './About';
+import Error from './Error';
 import NavBar from './NavBar';
 
 function App() {
@@ -12,15 +12,9 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <Switch>
-          <Route path = '/todoList'>
-            <TodoList/>
-          </Route>
-          <Route path = '/about'>
-            <About/>
-          </Route>
-          <Route path = '/error'>
-            <div>Такой страницы не существует</div>
-          </Route>
+          <Route path = '/' exact component={TodoList}/>
+          <Route path = '/about' component={About}/>
+          <Route path = '/error' component={Error}/>
           <Redirect to = '/error'/>
         </Switch>
       </BrowserRouter>
