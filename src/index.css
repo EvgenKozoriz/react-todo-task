@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.content {
+    max-width: 1024px;
+    margin: 0 auto;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    min-height: 800px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #00A9A7;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.todo-item p {
+    font-size: 34px;
+    margin: 0;
+    word-break: break-all;
+}
+
+.todo-item .todo-btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.todo-item .todo-btns button {
+    margin-right: 2px;
+    padding: 1rem 0.5rem;
+    width: 8rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: all .3s ease-out;
+}
+
+.todo-item .todo-btns button:hover {
+    padding: 1rem 0.5rem;
+    width: 8rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.todo-item-change {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #00A9A7;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.todo-item-change button {
+    margin-right: 2px;
+    padding: 1rem 0.5rem;
+    width: 8rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: all .3s ease-out;
+}
+
+.todo-item-change button:hover {
+    opacity: 60%;
+}
+
+.todo-item-change input {
+    border: 1px solid #00A9A7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 10px 0;
+    height: 30px;
+}
+
+.todo-item-change input:focus {
+    border: 3px solid #0985cc;
+    outline: none;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-input {
+    border: 3px solid #00A9A7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 10px 0;
+    height: 30px;
+}
+
+.text-input:focus {
+    border: 3px solid #0985cc;
+    outline: none;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #00A9A7;
+}
+
+.navBarLinks {
+    padding: 20px 10px;
+}
+
+.navBarLinks a {
+    color: cornsilk;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: all .3s ease-out;
+}
+
+.navBarLinks a:hover{
+    color: cyan;
+}
+
+.showBtns {
+    position: sticky;
+    bottom: 10px;
+}
+
+.showBtns .showCompleteBtn {
+    margin-right: 2px;
+    padding: 1rem 0.5rem;
+    width: 8rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #00A86B;
+    transition: all .3s ease-out;
+}
+
+.showBtns .showActiveBtn {
+    margin-right: 2px;
+    padding: 1rem 0.5rem;
+    width: 8rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #87cdee;
+    transition: all .3s ease-out;
+}
+
+.showBtns .showAllBtn {
+    margin-right: 2px;
+    padding: 1rem 0.5rem;
+    width: 8rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color:#808080;
+    transition: all .3s ease-out;
+}
+
+.showBtns .clearBtn {
+    margin-right: 2px;
+    padding: 1rem 0.5rem;
+    width: 8rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #A92D11;
+    transition: all .3s ease-out;
+}
+
+.showCompleteBtn:hover, .showActiveBtn:hover, .showAllBtn:hover, .clearBtn:hover {
+    opacity: 60%;
+}
